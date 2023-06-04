@@ -1,0 +1,92 @@
+.find-container {
+  max-width: 104rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 60rem;
+}
+.find-heading-container {
+  font-size: 4rem;
+  padding: 2rem;
+}
+.find-heading {
+  text-align: center;
+}
+.find-text-container {
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: rgba(69, 112, 232, 0.15);
+  max-width: 65rem;
+  margin: 0 auto;
+}
+.find-text {
+  text-align: center;
+  margin-top: -2.2rem;
+}
+.slider {
+  margin-top: 6.4rem;
+  width: 90%;
+}
+.card {
+  max-width: 30rem;
+  height: 30rem;
+  border-radius: 0.6rem;
+  background-color: rgba(69, 112, 232, 0.15);
+  overflow: hidden;
+}
+.img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+}
+.card-text {
+  text-align: center;
+  margin-top: 2rem;
+}
+/****************************************************************************/
+/*********responsive*********************************************************/
+@media screen and (max-width: 550px) {
+  .find-heading-container {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .find-heading-container {
+    font-size: 2.1rem;
+  }
+  .find-text-container {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 395px) {
+  .card {
+    max-width: 40rem;
+    height: 40rem;
+  }
+}
+@media screen and (max-width: 365px) {
+  .find-heading-container {
+    font-size: 2rem;
+  }
+  .find-text-container {
+    font-size: 1.3rem;
+  }
+  .find-text {
+    text-align: center;
+    margin-top: -1.5rem;
+  }
+}
+@media screen and (max-width: 285px) {
+  .find-heading-container {
+    font-size: 1.6rem;
+  }
+  .find-text-container {
+    font-size: 1rem;
+  }
+  .find-text {
+    text-align: center;
+    margin-top: -1.6rem;
+  }
+}

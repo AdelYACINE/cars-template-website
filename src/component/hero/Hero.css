@@ -1,0 +1,160 @@
+/*********************************************************************************/
+/**********hero*****************************************************************/
+.hero-container {
+  height: 70rem;
+  position: relative;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(22, 21, 21, 0.15);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  max-width: 70rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem 2.4rem;
+  border-radius: 100rem;
+  box-shadow: 1rem 1.4rem 1.6rem hsla(0, 4%, 91%, 0.2);
+  margin-top: 15rem;
+  color: #333;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
+
+.where-container,
+.from-container,
+.until-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+}
+.from-container,
+.until-container {
+  border-left: 2px solid hsla(0, 0%, 20%, 0.5);
+  padding-left: 2rem;
+}
+.input-text {
+  background-color: transparent;
+  border: none;
+}
+.input-text:focus {
+  outline: none;
+}
+.input-date {
+  background-color: transparent;
+  border: none;
+}
+.input-date:focus {
+  outline: none;
+}
+.btn-container {
+  width: 100%;
+}
+.form-btn {
+  display: none;
+  border: none;
+  background-color: rgb(74, 74, 237);
+  font-size: 1.4rem;
+  color: white;
+  padding: 1rem 1.4rem;
+  border-radius: 0.4rem;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.form-btn:hover {
+  background-color: rgb(87, 87, 233);
+}
+.form-icon-search {
+  cursor: pointer;
+}
+
+.each-slide {
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-div {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+button.nav.default-nav {
+  display: none;
+}
+/**********responsive***********************************************/
+@media screen and (max-width: 830px) {
+  .form-container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 85%;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  .from-container,
+  .until-container {
+    border-left: none;
+    padding-left: 0rem;
+  }
+  .where-container,
+  .from-container,
+  .until-container {
+    border-bottom: 2px solid hsla(0, 0%, 20%, 0.5);
+    width: 100%;
+  }
+  .form-icon-search {
+    display: none;
+  }
+  .form-btn {
+    display: block;
+  }
+}
+@media screen and (max-width: 550px) {
+  .form-container {
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  .from-container,
+  .until-container {
+    border-left: none;
+    padding-left: 0rem;
+  }
+  .where-container,
+  .from-container,
+  .until-container {
+    border-bottom: 2px solid hsla(0, 0%, 20%, 0.5);
+    width: 100%;
+  }
+  .form-icon-search {
+    display: none;
+  }
+  .form-btn {
+    display: block;
+  }
+}
+@media screen and (max-width: 285px) {
+  .where-container,
+  .from-container,
+  .until-container {
+    font-size: 1.4rem;
+  }
+}

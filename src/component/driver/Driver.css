@@ -1,0 +1,71 @@
+.driver-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.img-driver {
+  max-height: 50rem;
+  max-width: 50rem;
+  width: 90%;
+  height: 90%;
+}
+.driver-text-container {
+  height: 30rem;
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3.2rem;
+}
+.title-driver {
+  font-size: 3.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.title-color {
+  color: rgb(91, 91, 241);
+}
+.text-driver {
+  font-size: 1.6rem;
+}
+.btn-driver {
+  border: none;
+  cursor: pointer;
+  background-color: rgb(91, 91, 241);
+  color: white;
+  padding: 1rem 1.4rem;
+  border-radius: 0.6rem;
+  transition: all 0.3s;
+}
+.btn-driver:hover {
+  background-color: rgb(62, 62, 223);
+}
+/**********************************************************************************************/
+/************responsive***********************************************************************/
+@media screen and (max-width: 830px) {
+  .driver-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 365px) {
+  .driver-container {
+    padding: 0 3rem;
+  }
+}
+@media screen and (max-width: 285px) {
+  .driver-container {
+    padding: 0 2rem;
+  }
+  .title-driver {
+    font-size: 2.4rem;
+  }
+  .text-driver {
+    font-size: 1.4rem;
+  }
+  .btn-driver {
+    font-size: 1.3rem;
+  }
+}
